@@ -1,0 +1,139 @@
+.subscription h1 {
+  text-align: center;
+  margin: 1rem;
+  letter-spacing: 3px;
+}
+
+.subscription .sub-para {
+  text-align: center;
+  margin: 1rem;
+}
+
+.subscription .plan-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.subscription .plan-row .plan-col-2 {
+  background: purple !important;
+  color: white;
+}
+
+.subscription .plan-row .plan-col-2 p {
+  color: black;
+}
+
+.subscription .plan-row .plan-col-2 button {
+  background-color: white !important;
+  border: 1px solid purple !important;
+  color: black !important;
+}
+
+.subscription .plan-row .plan-col-2 button:hover {
+  background-color: #2c022c !important;
+  color: white !important;
+}
+
+.subscription .plan-row .plan-col-3 {
+  background: #2c022c !important;
+}
+
+.subscription .plan-row .plan-col {
+  background: #e7a3e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #ccc;
+  line-height: 41px;
+  text-align: center;
+}
+
+.subscription .plan-row .plan-col h2 {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.subscription .plan-row .plan-col p {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  background: #ebe6e6;
+  margin: 1rem auto;
+}
+
+.subscription .plan-row .plan-col p span {
+  font-size: 30px;
+}
+
+.subscription .plan-row .plan-col small {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.subscription .plan-row .plan-col .disabled {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.subscription .plan-row .plan-col button {
+  padding: 1rem;
+  background-color: purple;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 3rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.subscription .plan-row .plan-col button:hover {
+  background-color: #2c022c;
+}
+
+@media screen and (max-width: 1000px) {
+  .subscription .plan-row .plan-col button {
+    margin: 1rem 1rem !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .subscription .plan-row {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .subscription {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subscription .plan-row {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+/*# sourceMappingURL=subscription.css.map */

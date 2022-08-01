@@ -1,0 +1,93 @@
+.list div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 3rem;
+}
+
+.list div .select-search select {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  margin-right: 1rem;
+  outline: none;
+}
+
+.list div .select-search img {
+  width: 44px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.list table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  margin: 1rem auto;
+  font-weight: bolder;
+  width: 90%;
+}
+
+.list table tbody tr .green p {
+  background: green;
+  padding: 10px 19px;
+  color: white;
+}
+
+.list table tbody tr th {
+  padding: 0.7rem;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #ccc;
+}
+
+.list table tbody tr td {
+  padding: 0.2rem;
+  text-align: center;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 980px) {
+  .list div h1 {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .list {
+    margin-top: 6rem !important;
+  }
+  .list table {
+    width: 95% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .list div {
+    padding: 1rem 0.3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .list div {
+    padding: 1rem 0.3rem;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .list div .select-search {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+}
+/*# sourceMappingURL=list.css.map */

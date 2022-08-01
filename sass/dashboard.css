@@ -1,0 +1,202 @@
+.dashboard h1 {
+  color: #252537;
+  padding-left: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard .dash-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(222, 230, 233, 0.781);
+  grid-gap: 2rem;
+  padding: 1rem;
+}
+
+.dashboard .dash-row .dash-col {
+  background-color: #fff;
+}
+
+.dashboard .dash-row .dash-col .box {
+  background-color: rgba(222, 230, 233, 0.781);
+  margin: 1rem;
+}
+
+.dashboard .dash-row .dash-col .online-members {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+  grid-gap: 1rem;
+}
+
+.dashboard .dash-row .dash-col .online-members img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.dashboard .dash-row .dash-col .featured-posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.dashboard .dash-row .dash-col .featured-posts .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.dashboard .dash-row .dash-col .featured-posts .post a {
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard .dash-row .dash-col .featured-posts .post small {
+  color: #00000066;
+}
+
+.dashboard .dash-row .dash-col h2 {
+  border-left: 2px solid #252537;
+  padding: 14px;
+  background: white;
+  color: #252537;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.dashboard .dash-row .dash-col .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard .dash-row .dash-col .box img {
+  width: 50px;
+  padding: 5px;
+  background: white;
+}
+
+.dashboard .dash-row .dash-col .box div {
+  padding-left: 1rem;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.dashboard .dash-row .dash-col .box div a {
+  text-decoration: none;
+  color: black;
+}
+
+.dashboard .dash-row .dash-col .box div h3 {
+  margin-bottom: 5px;
+}
+
+.dashboard .dash-row .dash-col .box div p {
+  color: #00000066;
+}
+
+.dashboard .help-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+  line-height: 50px;
+  background: #9b9baf;
+  color: white;
+}
+
+.dashboard .help-center h1 {
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.dashboard .help-center p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.dashboard .help-center a {
+  color: white;
+  border: 1px solid purple;
+  background-color: purple;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.2rem 1.5rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.dashboard .help-center a:hover {
+  background-color: #350635;
+}
+
+@media screen and (max-width: 990px) {
+  .dash-row {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 861px) {
+  .dashboard {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .dash-row {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .dashboard .help-center {
+    padding: 4rem 0.8rem !important;
+  }
+  .dashboard .help-center h1 {
+    font-size: 2rem !important;
+    letter-spacing: 0 !important;
+  }
+  .dashboard .help-center p {
+    font-size: 0.9rem !important;
+  }
+  .dashboard .help-center a {
+    font-size: 0.9rem !important;
+    padding: 0.1rem 1.2rem !important;
+  }
+}
+/*# sourceMappingURL=dashboard.css.map */

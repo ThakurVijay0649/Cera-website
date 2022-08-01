@@ -1,0 +1,90 @@
+.list {
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    .select-search {
+      select {
+        padding: 0.8rem 1rem;
+        border: 1px solid #ccc;
+        margin-right: 1rem;
+        outline: none;
+      }
+      img {
+        width: 44px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: 1rem auto;
+    font-weight: bolder;
+    width: 90%;
+    tbody {
+      tr {
+        .green {
+          p {
+            background: green;
+            padding: 10px 19px;
+            color: white;
+          }
+        }
+        th {
+          padding: 0.7rem;
+          text-align: center;
+          border: 2px solid black;
+          background-color: #ccc;
+        }
+        td {
+          padding: 0.2rem;
+          text-align: center;
+          border: 2px solid black;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .list {
+    div {
+      h1 {
+        font-size: 1.4rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .list {
+    margin-top: 6rem !important;
+    table {
+      width: 95% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .list {
+    div {
+      padding: 1rem 0.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .list {
+    div {
+      padding: 1rem 0.3rem;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      .select-search {
+        flex-direction: row !important;
+      }
+    }
+  }
+}
